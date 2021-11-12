@@ -1,0 +1,420 @@
+.header {
+   padding: 30px 0;
+
+   .offcanvas-body {
+      padding: 0 !important;
+   }
+
+   .offcanvas-header {
+      padding-bottom: 0;
+   }
+
+   .collapse__title {
+      display: flex;
+      justify-content: center;
+      font-size: 18px;
+      margin-bottom: 12px;
+   }
+
+   &__menu {
+
+      .bi {
+         font-size: 24px;
+         color: $cl-black;
+      }
+
+      &-body {
+         width: 300px;
+         background: $cl-primary;
+      }
+
+      &-inner {
+         justify-content: flex-end;
+         padding-top: 10px;
+         padding-bottom: 10px !important;
+      }
+
+      &-close {
+         color: $cl-btn !important;
+
+         .bi {
+            position: relative;
+            top: 2px;
+            font-size: 22px;
+         }
+      }
+
+      &-list {
+         @include list-unstyled
+      }
+
+      &-item {
+         
+         &__link {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 15px;
+            border-bottom: 1px solid #073522;
+            color: $cl-white;
+            transition: color 0.2s ease;
+
+            &:hover {
+               color: $cl-btn;
+            }
+
+            &-b {
+               border-top: 1px solid #073522;
+            }
+
+            &--after::after {
+               position: absolute;
+               top: -2%;
+               right: 17.2%;
+               width: 1px;
+               height: 50px;
+               content: "";
+               background: #073522;
+            }
+
+            .bx {
+               font-size: 20px;
+            }
+         }
+      }
+   }
+
+   &__list {
+      @include list-unstyled
+   }
+
+   &__item {
+
+      &-link {
+         margin-left: 15px;
+
+         .bi {
+            font-size: 22px;
+            padding: 11px 13px;
+            border-radius: 50%;
+            color: $cl-txt;
+
+            &-person {
+               background: #E8F8F7;
+               @include tr-bg_cl;
+            
+               &:before {
+                  font-size: 24px;
+               }
+
+               &::after {
+                  display: none;
+               }
+
+               &:hover {
+                  color: $cl-white;
+                  background: $cl-btn;
+               }
+            }   
+
+            &-heart {
+               position: relative;
+               background: #F6F3E3;
+               @include tr-bg_cl;
+
+               &:before {
+                  position: relative;
+                  top: 2px;
+               }
+
+               &:after {
+                  position: absolute;
+                  top: -1px;
+                  right: -2px;
+                  width: 17px;
+                  height: 17px;
+                  content: "0";
+                  font-style: normal;
+                  font-size: 12px;
+                  padding-left: 5px;
+                  border-radius: 50%;
+                  color: $cl-white;
+                  background: #E0BF96;
+               }
+
+               &:hover {
+                  color: $cl-white;
+                  background: $cl-btn;
+               }
+            }
+
+            &-basket {
+               position: relative;
+               background: #F3E4DC;
+               @include tr-bg_cl;
+            }
+
+            &:after {
+               position: absolute;
+               top: -1px;
+               right: -2px;
+               width: 17px;
+               height: 17px;
+               content: "0";
+               font-style: normal;
+               font-size: 12px;
+               padding-left: 5px;
+               border-radius: 50%;
+               color: $cl-white;
+               background: #E0BF96;
+            }
+
+            &:hover {
+               color: $cl-white;
+               background: $cl-btn;
+            }
+         }
+      }
+   }
+
+   &__canvas {
+      width: 300px;
+
+      &-inner {
+         padding: 20px;
+      }
+
+      &-title {
+         font-weight: 300;
+         font-size: 16px;
+         margin-bottom: 1em;
+         color: $cl-btn;
+      }
+
+      &-form {
+
+         &__inp {
+            width: 250px;
+            height: 35px;
+            font-size: 14px;
+            padding: 0 10px;
+            padding-right: 30px;
+            margin-bottom: 1em;
+            border-radius: 5px;
+            border: 1px solid #E2E2E2;
+         }
+
+         .fal {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+         }
+
+         &__check {
+            position: relative;
+            top: 2px;
+         }
+
+         &__txt {
+            font-size: 12px;
+            margin-bottom: 1em;
+            color: #414141;
+         }
+
+         &__link {
+            font-size: 12px;
+            margin-left: 30px;
+            color: #555;
+            @include tr-bg_cl;
+
+            &:hover {
+               color: $cl-btn;
+            }
+         }
+
+         &__btn {
+            width: 100%;
+            display: block;
+            font-weight: 700;
+            font-size: 12px;
+            padding: 10px;
+            margin-bottom: 2em;
+            border-radius: 40px;
+            color: $cl-white;
+            background: $cl-btn;
+         }
+      }
+
+      &-social__link {
+         margin-bottom: 1em;
+         
+         .bx {
+            padding: 13px;
+            border-radius: 50%;
+            color: $cl-white;
+         }
+
+         .bxl-facebook {
+            border: 1px solid #4C68A2;
+            background: #4C68A2;
+            transition: background 0.3s ease,
+            border 0.3s ease;
+
+            &:hover {
+               color: #4C68A2;
+               background: $cl-white;
+            }
+         }
+
+         .bxl-google {
+            border: 1px solid #4285F4;
+            background: #4285F4;
+            transition: background 0.3s ease, border 0.3s ease;
+
+            &:hover {
+               color: #4285F4;
+               background: $cl-white;
+            }
+         }
+
+         .bxl-twitter {
+            border: 1px solid #53D1F8;
+            background: #53D1F8;
+            transition: background 0.3s ease, border 0.3s ease;
+
+            &:hover {
+               color: #53D1F8;
+               background: $cl-white;
+            }
+         }
+      }
+
+      &-account {
+         .fal {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+         }
+      }
+
+      &-lang {
+
+         &__txt {
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 4px;
+            color: #aaa;
+         }
+
+         &__imgs {
+            margin-bottom: 4px;
+
+            img {
+               margin-left: 4px;
+               margin-right: 6px;
+            }
+         }
+
+         &__us {
+            font-size: 14px;
+            margin-left: 4px;
+            margin-right: 8px;
+            color: $cl-p;
+
+            &:hover {
+               color: $cl-btn;
+            }
+         }
+
+         &__inner {
+            border-left: 1px solid $cl-border;
+         }
+
+         &__link {
+            display: block;
+            font-size: 13px;
+            margin-top: 5px;
+            margin-bottom: 4px;
+            margin-left: 18px;
+            color: #aaa;
+
+            .far,.fas,.fal {
+               margin-right: 4px;
+            }
+
+            &:hover {
+               color: $cl-btn;
+            }
+         }
+      }
+   }
+
+   &__left-txt {
+      position: fixed;
+      top: 30%;
+      right: -3.5%;
+      font-size: 12px;
+      letter-spacing: 1px;
+      padding: 10px;
+      color: $cl-white;
+      background: $cl-primary;
+      transform: rotateZ(270deg);
+      z-index: 10;
+   }
+}
+
+.header__form {
+   width: 550px;
+   height: 45px;
+   padding-left: 20px;
+   padding-right: 30px;
+   border-radius: 30px;
+   background: #F4F4F4;
+
+   .bx {
+      position: relative;
+      top: 3px;
+      font-size: 20px;
+   }
+
+   &-inp {
+      position: relative;
+      left: 10px;
+      width: 400px;
+      height: 40px;
+      padding: 0 10px;
+      border: none;
+      background: transparent;
+   }
+
+   &-btn {
+      font-weight: 700;
+   }
+}
+
+@include breakpoint-down($max-lg) {
+   .header__form {
+      width: 450px;
+
+      &-inp {
+         width: 300px;
+      }
+   }
+}
+
+@include breakpoint-down($max-md) {
+   .header {
+      padding: 10px 0;
+
+      &__item:not(:last-child) {
+         display: none;
+      }
+   }
+   .header__form {
+      display: none !important;
+   }
+   .header__left-txt {
+      display: none;
+   }
+}

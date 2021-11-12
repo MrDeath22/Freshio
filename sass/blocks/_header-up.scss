@@ -1,0 +1,29 @@
+.header-up {
+   padding: 20px 0;
+
+   &__desc {
+      font-size: $txt-14;
+      margin: 0;
+      color: $cl-black;
+   }
+
+   &__link {
+      font-size: 12px;
+      margin-left: 20px;
+      color: $cl-p;
+      transition: color 0.2s ease;
+
+      &:hover {
+         color: $cl-btn;
+      }
+   }
+}
+
+@include breakpoint-down($max-md) {
+   body {
+      padding: 0;
+   }
+   .header-up {
+      display: none;
+   }
+}

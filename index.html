@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Freshio</title>
+
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+   <!-- Bootstrap Icon -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+   <!-- Box Icon -->
+   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+   <!-- Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+   <!-- Slick -->
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+   <!-- CSS Files -->
+   <link rel="stylesheet" href="./css/global.css">
+   <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+
+   <section class="header-up">
+      <div class="header-up__container container">
+         <div class="header-up__inner d-flex between align-center">
+            <p class="header-up__desc">FREE express international delivery + EASY returns</p>
+            <div class="header-up__links">
+               <a class="header-up__link" href="about.html">ABOUT</a>
+               <a class="header-up__link" href="#">FAQ</a>
+               <a class="header-up__link" href="contact.html">CONTACT US</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- *all use to space around body -->
+   <div class="all">
+
+      <header class="header">
+         <div class="header__container container">
+            <div class="header__inner d-flex between align-center">
+               <button class="header__menu d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  <i class="bi bi-list"></i>
+               </button>
+               <div class="offcanvas offcanvas-start header__menu-body" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header header__menu-inner d-flex">
+                    <button class="text-reset header__menu-close d-flex align-center" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                       <i class="bi bi-x"></i>Close
+                    </button>
+                  </div>
+                  <div class="offcanvas-body">
+                     <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                           <a class="header__menu-item__link header__menu-item__link-b  header__menu-item__link--after" href="#">
+                              Home
+                              <i class='bx bx-chevrons-right'></i>
+                           </a>
+                        </li>
+                        <li class="header__menu-item">
+                           <a class="header__menu-item__link header__menu-item__link--after" href="#">
+                              Shop
+                              <i class='bx bx-chevrons-right'></i>
+                           </a>
+                        </li>
+                        <li class="header__menu-item">
+                           <a class="header__menu-item__link header__menu-item__link--after" href="#">
+                              Pages
+                              <i class='bx bx-chevrons-right'></i>
+                           </a>
+                        </li>
+                        <li class="header__menu-item">
+                           <a class="header__menu-item__link" href="#">Blog</a>
+                        </li>
+                        <li class="header__menu-item">
+                           <a class="header__menu-item__link" href="#">Contact</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <a class="header__logo" href="index.html">
+                  <img class="header__logo-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/img/freshio-logo-1603358296.jpg" alt="logo">
+               </a>
+               <form class="header__form d-flex between align-center" action="example.php">
+                  <label>
+                     <i class='bx bx-search-alt-2'></i>
+                     <input class="header__form-inp" type="text" placeholder="Enter Keyword...">
+                  </label>
+                  <button class="header__form-btn">Search</button>
+               </form>
+               <ul class="header__list d-flex">
+                  <li class="header__item">
+                     <button class="header__item-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="bi bi-person"></i>
+                     </button>
+                     <div class="offcanvas offcanvas-end header__canvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                           <a class="header__logo" href="index.html">
+                              <img class="header__logo-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/img/freshio-logo-1603358296.jpg" alt="logo">
+                           </a>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+
+                           <div class="header__canvas-inner">
+                              <span class="header__canvas-title">
+                                 Existing Account Login
+                              </span>
+                              <form class="header__canvas-form" action="/action-page.php">
+   
+                                 <label>
+                                    <input class="header__canvas-form__inp" type="email" name="email" placeholder="Email Address">
+                                 </label>
+                                 <label class="relative-p">
+                                    <input class="header__canvas-form__inp" type="password" name="password" placeholder="Password">
+                                    <i class="fal fa-key"></i>
+                                 </label>
+                                 <input class="header__canvas-form__check" type="checkbox" name="check">
+                                 <span class="header__canvas-form__txt">Remember Me</span>
+                                 <button class="header__canvas-form__link" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Forgot Password?</button>
+                                 <button class="header__canvas-form__btn">Login</button>
+                                 <div id="flush-collapseOne" class="accordion-collapse collapse">
+                                    <span class="collapse__title">Reset Password</span>
+                                    <label>
+                                       <input class="header__canvas-form__inp" type="email" name="email" placeholder="Email Address">
+                                    </label>
+                                    <button class="header__canvas-form__btn">Reset Password</button>
+                                </div>
+                              </form>
+   
+                              <div class="header__canvas-social">
+                                 <span class="header__canvas-title" style="margin-bottom: 8px">
+                                    Connect with Social Networks
+                                 </span>
+                                 <div class="header__canvas-social__links">
+                                    <a class="header__canvas-social__link" href="#">
+                                       <i class='bx bxl-facebook'></i>
+                                    </a>
+                                    <a class="header__canvas-social__link" href="#">
+                                       <i class='bx bxl-google'></i>
+                                    </a>
+                                    <a class="header__canvas-social__link" href="#">
+                                       <i class='bx bxl-twitter'></i>
+                                    </a>
+                                 </div>
+                              </div>
+   
+                              <form class="header__canvas-account" action="/action-page.php">
+   
+                                 <span class="header__canvas-title">
+                                    New Account Register
+                                 </span>
+                                 <label>
+                                    <input class="header__canvas-form__inp" type="text" name="email" placeholder="First Name">
+                                 </label>
+                                 <label>
+                                    <input class="header__canvas-form__inp" type="text" name="email" placeholder="Last Name">
+                                 </label>
+                                 <label>
+                                    <input class="header__canvas-form__inp" type="email" name="email" placeholder="Email Address">
+                                 </label>
+                                 <label class="relative-p">
+                                    <input class="header__canvas-form__inp" type="password" name="password" placeholder="Password">
+                                    <i class="fal fa-key"></i>
+                                 </label>
+                                 <input class="header__canvas-form__check" type="checkbox" name="check">
+                                 <span class="header__canvas-form__txt">I agree to the terms.</span>
+                                 <button class="header__canvas-form__btn">Create Account</button>
+   
+                              </form>
+
+                              <div class="header__canvas-lang d-flex between">
+                                 <div>
+                                    <span class="header__canvas-lang__txt">Language:</span>
+                                    <div class="header__canvas-lang__imgs">
+                                       <a href="#">
+                                          <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                                       </a>
+                                       <a href="#">
+                                          <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                                       </a>
+                                       <a href="#">
+                                          <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                                       </a>
+                                       <br>
+                                       <a href="#">
+                                          <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                                       </a>
+                                       <a href="#">
+                                          <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                                       </a>
+                                       <a href="#">
+                                          <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                                       </a>
+                                    </div>
+                                    <span class="header__canvas-lang__txt">Currency:</span> <br>
+                                    <a class="header__canvas-lang__us" href="#">EUR</a>
+                                    <a class="header__canvas-lang__us" href="#">USD</a>
+                                 </div>
+
+                                 <div class="header__canvas-lang__inner">
+                                    <a class="header__canvas-lang__link" href="#">
+                                       <i class="fas fa-sign-in-alt"></i>
+                                       Sign In
+                                    </a>
+                                    <a class="header__canvas-lang__link" href="#">
+                                       <i class="far fa-user"></i>
+                                       My Account
+                                    </a>
+                                    <a class="header__canvas-lang__link" href="#">
+                                       <i class="far fa-heart"></i>
+                                       Oversize
+                                    </a>
+                                    <a class="header__canvas-lang__link" href="#">
+                                       <i class="fal fa-copy"></i>
+                                       Shopping (0)
+                                    </a>
+                                    <a class="header__canvas-lang__link" href="#">
+                                       <i class="fal fa-check-square"></i>
+                                       Favoutite
+                                    </a>
+                                 </div>
+                              </div>
+                              
+                           </div>
+   
+                        </div>
+                     </div>
+                  </li>
+                  <li class="header__item">
+                     <a class="header__item-link" href="#">
+                        <i class="bi bi-heart"></i>
+                     </a>
+                  </li>
+                  <li class="header__item">
+                     <a class="header__item-link" href="#">
+                        <i class="bi bi-basket"></i>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <button class="header__left-txt">
+            THEME OPTIONS
+         </button>
+      
+      </header>
+
+      <!-- Navigation -->
+      <div class="container">
+         <div class="header-nav d-flex align-center">
+            <button class="header-nav__menu d-flex align-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+               <i class="bi bi-list"></i>
+               Shop by Department
+            </button>
+            <ul class="dropdown-menu header-nav__menu-list" aria-labelledby="dropdownMenuButton1">
+               <li class="header-nav__menu-item">
+                  <a class="dropdown-item header-nav__menu-item__link" href="#">
+                     <i class="fal fa-salad"></i>
+                     Fruits & Vegetables
+                  </a>
+               </li>
+               <li class="header-nav__menu-item">
+                  <a class="dropdown-item header-nav__menu-item__link" href="#">
+                     <i class="fal fa-meat"></i>
+                     Supplyments
+                  </a>
+               </li>
+               <li class="header-nav__menu-item">
+                  <a class="dropdown-item header-nav__menu-item__link" href="#">
+                     <i class="fal fa-egg-fried"></i>
+                     Dairy Bread & Eggs
+                  </a>
+               </li>
+               <li class="header-nav__menu-item">
+                  <a class="dropdown-item header-nav__menu-item__link" href="#">
+                     <i class="fal fa-pizza-slice"></i>
+                     Package Foods
+                  </a>
+               </li>
+               <li class="header-nav__menu-item">
+                  <a class="dropdown-item header-nav__menu-item__link" href="#">
+                     <i class="fal fa-apple-alt"></i>
+                     Beauty & Care
+                  </a>
+               </li>
+               <li class="header-nav__menu-item">
+                  <a class="dropdown-item header-nav__menu-item__link" href="#">
+                     <i class="fal fa-volleyball-ball"></i>
+                     Health & Wellness
+                  </a>
+               </li>
+               <li class="header-nav__menu-item">
+                  <a class="dropdown-item header-nav__menu-item__link" href="#">
+                     <i class="fal fa-ice-cream"></i>
+                     Baby & Infants
+                  </a>
+               </li>
+               <li class="header-nav__menu-item">
+                  <a class="dropdown-item header-nav__menu-item__link" href="#">
+                     <i class="fal fa-leaf"></i>
+                     Home Care
+                  </a>
+               </li>
+               <li class="header-nav__menu-item">
+                  <a class="dropdown-item header-nav__menu-item__link" href="#">
+                     <i class="fal fa-badge-percent"></i>
+                     Hot Offers
+                  </a>
+               </li>
+            </ul>
+            <nav class="nav">
+               <ul class="header-nav__list d-flex">
+                  <li class="header-nav__item">
+                     <a class="header-nav__item-link" href="#">
+                        Home
+                        <i class='bx bx-chevron-down'></i>
+                     </a>
+                     <div class="header-nav__drop header-nav__drop1">
+                        <a class="header-nav__drop-link" href="#">Home 1</a>
+                        <a class="header-nav__drop-link" href="#">Home 2</a>
+                        <a class="header-nav__drop-link" href="#">Home 3</a>
+                        <a class="header-nav__drop-link" href="#">Home 4</a>
+                        <a class="header-nav__drop-link" href="#">Home 5</a>
+                        <a class="header-nav__drop-link" href="#">Home 6</a>
+                        <a class="header-nav__drop-link" href="#">Home 7</a>
+                        <a class="header-nav__drop-link" href="#">Home 8</a>
+                     </div>
+                  </li>
+                  <li class="header-nav__item">
+                     <a class="header-nav__item-link" href="#">
+                        Shop
+                        <i class='bx bx-chevron-down'></i>
+                     </a>
+                     <div class="header-nav__drop d-flex">
+                        <div class="header-nav__drop-inner">
+                           <span class="header-nav__drop-txt">Categories 1</span>
+                           <a class="header-nav__drop-link" href="#">Home 1</a>
+                           <a class="header-nav__drop-link" href="#">Home 2</a>
+                           <a class="header-nav__drop-link" href="#">Home 3</a>
+                           <a class="header-nav__drop-link" href="#">Home 4</a>
+                        </div>
+                        <div class="header-nav__drop-inner">
+                           <span class="header-nav__drop-txt">Categories 2</span>
+                           <a class="header-nav__drop-link" href="#">Home 1</a>
+                           <a class="header-nav__drop-link" href="#">Home 2</a>
+                           <a class="header-nav__drop-link" href="#">Home 3</a>
+                           <a class="header-nav__drop-link" href="#">Home 4</a>
+                        </div>
+                        <div class="header-nav__drop-inner">
+                           <span class="header-nav__drop-txt">Categories 3</span>
+                           <a class="header-nav__drop-link" href="#">Home 1</a>
+                           <a class="header-nav__drop-link" href="#">Home 2</a>
+                           <a class="header-nav__drop-link" href="#">Home 3</a>
+                           <a class="header-nav__drop-link" href="#">Home 4</a>
+                        </div>
+                        <div class="header-nav__drop-inner">
+                           <span class="header-nav__drop-txt">Categories 4</span>
+                           <a class="header-nav__drop-link" href="#">Home 1</a>
+                           <a class="header-nav__drop-link" href="#">Home 2</a>
+                           <a class="header-nav__drop-link" href="#">Home 3</a>
+                           <a class="header-nav__drop-link" href="#">Home 4</a>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="header-nav__item">
+                     <a class="header-nav__item-link" href="#">
+                        Pages
+                        <i class='bx bx-chevron-down'></i>
+                     </a>
+                     <div class="header-nav__drop header-nav__drop2 d-flex">
+                        <div class="header-nav__drop-item">
+                           <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg" alt="img">
+                        </div>
+                        <div class="header-nav__drop-item">
+                           <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg" alt="img">
+                        </div>
+                        <div class="header-nav__drop-item">
+                           <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg" alt="img">
+                        </div>
+                        <div class="header-nav__drop-item">
+                           <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg" alt="img">
+                        </div>
+                        <div class="header-nav__drop-item">
+                           <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/38/99/1a/38991a8c1582669d29abe889bc0d5f52.jpg" alt="img">
+                        </div>
+                        <div class="header-nav__drop-item">
+                           <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/c5/d9/02/c5d9025b68250832a31eac3b6d344955.jpg" alt="img">
+                        </div>
+                        <div class="header-nav__drop-item">
+                           <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/c5/d9/02/c5d9025b68250832a31eac3b6d344955.jpg" alt="img">
+                        </div>
+                     </div>
+                  </li>
+                  <li class="header-nav__item">
+                     <a class="header-nav__item-link" href="#">Blog</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a class="header-nav__item-link" href="#">Contact</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>   
+      </div>
+
+      <!-- * use to naviganion on responsive "sm" -->
+      <div class="header-bottom d-lg-none center">
+         <a class="header-bottom__link" href="#">
+            <i class="far fa-store"></i>
+            shop
+         </a>
+         <a class="header-bottom__link" href="#">
+            <i class="far fa-heart"></i>
+            wishlist
+         </a>
+         <button class="header-bottom__link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2">
+            <i class="far fa-user"></i>
+            account
+         </button>
+         <div class="offcanvas offcanvas-end header__canvas" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel2">
+            <div class="offcanvas-header">
+               <a class="header__logo" href="index.html">
+                  <img class="header__logo-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/img/freshio-logo-1603358296.jpg" alt="logo">
+               </a>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+               <div class="header__canvas-inner" style="padding-left: 0;">
+                  <span class="header__canvas-title">
+                     Existing Account Login
+                  </span>
+                  <form class="header__canvas-form" action="/action-page.php">
+
+                     <label>
+                        <input class="header__canvas-form__inp" type="email" name="email" placeholder="Email Address">
+                     </label>
+                     <label class="relative-p">
+                        <input class="header__canvas-form__inp" type="password" name="password" placeholder="Password">
+                        <i class="fal fa-key"></i>
+                     </label>
+                     <input class="header__canvas-form__check" type="checkbox" name="check">
+                     <span class="header__canvas-form__txt">Remember Me</span>
+                     <button class="header__canvas-form__link" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="margin-bottom: 14px;">Forgot Password?</button>
+                     <button class="header__canvas-form__btn">Login</button>
+                     <div id="flush-collapseOne" class="accordion-collapse collapse">
+                        <span class="collapse__title">Reset Password</span>
+                        <label>
+                           <input class="header__canvas-form__inp" type="email" name="email" placeholder="Email Address">
+                        </label>
+                        <button class="header__canvas-form__btn">Reset Password</button>
+                    </div>
+                  </form>
+
+                  <div class="header__canvas-social">
+                     <span class="header__canvas-title" style="margin-bottom: 8px">
+                        Connect with Social Networks
+                     </span>
+                     <div class="header__canvas-social__links">
+                        <a class="header__canvas-social__link" href="#">
+                           <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a class="header__canvas-social__link" href="#">
+                           <i class='bx bxl-google'></i>
+                        </a>
+                        <a class="header__canvas-social__link" href="#">
+                           <i class='bx bxl-twitter'></i>
+                        </a>
+                     </div>
+                  </div>
+
+                  <form class="header__canvas-account" action="/action-page.php">
+
+                     <span class="header__canvas-title">
+                        New Account Register
+                     </span>
+                     <label>
+                        <input class="header__canvas-form__inp" type="text" name="email" placeholder="First Name">
+                     </label>
+                     <label>
+                        <input class="header__canvas-form__inp" type="text" name="email" placeholder="Last Name">
+                     </label>
+                     <label>
+                        <input class="header__canvas-form__inp" type="email" name="email" placeholder="Email Address">
+                     </label>
+                     <label class="relative-p">
+                        <input class="header__canvas-form__inp" type="password" name="password" placeholder="Password">
+                        <i class="fal fa-key"></i>
+                     </label>
+                     <input class="header__canvas-form__check" type="checkbox" name="check">
+                     <span class="header__canvas-form__txt">I agree to the terms.</span>
+                     <button class="header__canvas-form__btn">Create Account</button>
+
+                  </form>
+
+                  <div class="header__canvas-lang d-flex between">
+                     <div>
+                        <span class="header__canvas-lang__txt">Language:</span>
+                        <div class="header__canvas-lang__imgs">
+                           <a href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                           </a>
+                           <a href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                           </a>
+                           <a href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                           </a>
+                           <br>
+                           <a href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                           </a>
+                           <a href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                           </a>
+                           <a href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                           </a>
+                        </div>
+                        <span class="header__canvas-lang__txt">Currency:</span> <br>
+                        <a class="header__canvas-lang__us" href="#">EUR</a>
+                        <a class="header__canvas-lang__us" href="#">USD</a>
+                     </div>
+
+                     <div class="header__canvas-lang__inner">
+                        <a class="header__canvas-lang__link" href="#">
+                           <i class="fas fa-sign-in-alt"></i>
+                           Sign In
+                        </a>
+                        <a class="header__canvas-lang__link" href="#">
+                           <i class="far fa-user"></i>
+                           My Account
+                        </a>
+                        <a class="header__canvas-lang__link" href="#">
+                           <i class="far fa-heart"></i>
+                           Oversize
+                        </a>
+                        <a class="header__canvas-lang__link" href="#">
+                           <i class="fal fa-copy"></i>
+                           Shopping (0)
+                        </a>
+                        <a class="header__canvas-lang__link" href="#">
+                           <i class="fal fa-check-square"></i>
+                           Favoutite
+                        </a>
+                     </div>
+                  </div>
+                  
+               </div>
+
+            </div>
+         </div>
+         <button class="header-bottom__link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+            <i class="far fa-search"></i>
+            search
+         </button>
+         <div class="offcanvas offcanvas-top header-bottom__offcanvas" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-body">
+               <form class="header__form header-bottom__form d-flex between align-center w-100" action="example.php" style="display: block !important;">
+                  <i class='bx bx-search-alt-2'></i>
+                  <label>
+                     <input class="header__form-inp header-bottom__inp" type="text" placeholder="Enter Keyword...">
+                  </label>
+                  <button class="header__form-btn header-bottom__btn">Search</button>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <section class="main">
+         <div class="main__container container">
+            <div class="main__inner d-flex">
+               <div id="carouselExampleControls" class="main__carousel carousel slide col-md-8 col-sm-12 col-xs-12" data-bs-ride="carousel">
+                  <div class="carousel-inner carousel">
+                     <div class="carousel-item active" style="height: 100%;">
+                        <img src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-slide2.jpg?v=1614305184" alt="img" height="100%">
+                        <div class="carousel__titles">
+                           <span class="carousel__txt">Fresh And Testy</span>
+                           <h2 class="carousel__title">Farm Market Organic Shop</h2>
+                           <a class="carousel__btn" href="#">
+                              Shop Now
+                              <i class='bx bx-chevrons-right'></i>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-slide1.jpg?v=1614305184" alt="img">
+                        <div class="carousel__titles">
+                           <span class="carousel__txt">Fresh And Testy</span>
+                           <h2 class="carousel__title">Farm Market Organic Shop</h2>
+                           <a class="carousel__btn" href="#">
+                              Shop Now
+                              <i class='bx bx-chevrons-right'></i>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-slide2.jpg?v=1614305184" alt="img">
+                        <div class="carousel__titles">
+                           <span class="carousel__txt">Fresh And Testy</span>
+                           <h2 class="carousel__title">Farm Market Organic Shop</h2>
+                           <a class="carousel__btn" href="#">
+                              Shop Now
+                              <i class='bx bx-chevrons-right'></i>
+                           </a>
+                        </div>
+                     </div>
+                     <button class="carousel__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                       <i class="bi bi-arrow-left"></i>
+                     </button>
+                     <button class="carousel__arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                       <i class="bi bi-arrow-right"></i>
+                     </button>
+                   </div>
+               </div>
+               <div class="main__imgs col-sm-12">
+                  <div class="main__wrapper">
+                     <img src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-bn1.jpg?v=1614307028" alt="img" style="height: 100%; width: 100%;">
+                     <div class="main__wrapper-titles">
+                        <h3 class="main__wrapper-title">Discover Real Organic Flavors</h3>
+                        <a class="carousel__btn" href="#">
+                           Shop Now
+                           <i class='bx bx-chevrons-right'></i>
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="main__diver">
+                     <img src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2-bn2.jpg?v=1614307028" alt="img" style="height: 80%; width: 100%;">
+                     <div class="main__diver-titles center">
+                        <span class="main__diver-txt">Summer Sale</span>
+                        <span class="main__diver-txt2">50% Off</span>
+                        <p class="main__diver-desc">Vitamins, Supplements and Herbs</p>
+                        <a class="main__diver-btn" href="#">
+                           Shop Now
+                           <i class='bx bx-chevrons-right'></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="main__shipping shipping">
+               <ul class="shipping__list d-flex between">
+                  <li class="shipping__item">
+                     <img src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h1_service_1.png?v=1604626519" alt="apple">
+                     <div class="shipping__item-txts">
+                        <span class="shipping__item-txt">Curated Products</span>
+                        <span class="shipping__item-desc">from Handpicked Sellers</span>
+                     </div>
+                  </li>
+                  <li class="shipping__item">
+                     <img src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h1_service_2.png?v=1604626519" alt="apple">
+                     <div class="shipping__item-txts">
+                        <span class="shipping__item-txt">Curated Products</span>
+                        <span class="shipping__item-desc">Made with passion by 300+ curators across the country.</span>
+                     </div>
+                  </li>
+                  <li class="shipping__item">
+                     <img src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h1_service_3.png?v=1604626519" alt="apple">
+                     <div class="shipping__item-txts">
+                        <span class="shipping__item-txt">Curated Products</span>
+                        <span class="shipping__item-desc">from Handpicked Sellers</span>
+                     </div>
+                  </li>
+                  <li class="shipping__item">
+                     <img src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h1_service_4.png?v=1604626519" alt="apple">
+                     <div class="shipping__item-txts">
+                        <span class="shipping__item-txt">Curated Products</span>
+                        <span class="shipping__item-desc">from Handpicked Sellers</span>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+
+      <section class="product">
+         <div class="product__container container">
+            <div class="product__inner">
+               <div class="product__titles d-flex between align-center">
+                  <h2 class="product__title">Featured Products</h2>
+                  <a class="product__btn" href="#">
+                     Shop All
+                     <i class='bx bx-chevrons-right'></i>
+                  </a>
+               </div>
+               <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                     <ul class="product__list row between">
+                        <li class="product__item product__item--active col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver relative-p">
+                              <div class="sale">
+                                 <span class="sale__txt">ONLINE ONLY</span>
+                                 <span class="sale__txt2">ON SALE!</span>
+                              </div>
+                              <img class="product__item-img__ab" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/24-home_default/hummingbird-printed-t-shirt.jpg" alt="carrot">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/30-home_default/brown-bear-printed-sweater.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                        <li class="product__item col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/31-home_default/the-best-is-yet-to-come-framed-poster.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                        <li class="product__item col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/32-home_default/the-adventure-begins-framed-poster.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                        <li class="product__item col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/33-home_default/today-is-a-good-day-framed-poster.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                     </ul>
+                    </div>
+                    <div class="carousel-item">
+                     <ul class="product__list row between">
+                        <li class="product__item product__item--active col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver relative-p">
+                              <div class="sale">
+                                 <span class="sale__txt">ONLINE ONLY</span>
+                                 <span class="sale__txt2">ON SALE!</span>
+                              </div>
+                              <img class="product__item-img__ab" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/25-home_default/hummingbird-printed-t-shirt.jpg" alt="carrot">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/34-home_default/mug-the-best-is-yet-to-come.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                        <li class="product__item col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/35-home_default/the-best-is-yet-to-come-framed-poster.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                        <li class="product__item col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/36-home_default/the-adventure-begins-framed-poster.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                        <li class="product__item col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-home_default/today-is-a-good-day-framed-poster.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                     </ul>
+                    </div>
+                    
+                  </div>
+                  <button class="carousel-control-prev product__arrow product__arrow-fr" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                     <i class="bi bi-arrow-left"></i>
+                  </button>
+                  <button class="carousel-control-next product__arrow product__arrow-sc" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                     <i class="bi bi-arrow-right"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="fruit">
+         <div class="fruit__container container">
+            <div class="fruit__inner">
+               <ul class="fruit__list row">
+                  <li class="fruit__item">
+                     <img class="fruit__item-img" src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn1.jpg?v=1630122614" alt="fruit">
+                     <span class="fruit__item-title">Fruits &<br> Vegetables</span>
+                  </li>
+                  <li class="fruit__item">
+                     <img class="fruit__item-img" src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn2.jpg?v=1630122614" alt="fruit">
+                     <span class="fruit__item-title fruit__item-title2">Dairy Bread &<br> Eggs</span>
+                  </li>
+                  <li class="fruit__item">
+                     <img class="fruit__item-img" src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn5.jpg?v=1630122614" alt="fruit">
+                     <span class="fruit__item-title">Health &<br> Wellnes</span>
+                  </li>
+                  <li class="fruit__item">
+                     <img class="fruit__item-img" src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn3.jpg?v=1630122614" alt="fruit">
+                     <span class="fruit__item-title fruit__item-title2">Package<br> Foods</span>
+                  </li>
+                  <li class="fruit__item">
+                     <img class="fruit__item-img" src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn4.jpg?v=1630122614" alt="fruit">
+                     <span class="fruit__item-title fruit__item-title2 fruit__item-title3">Baverages</span>
+                  </li>
+               </ul> 
+               
+            </div>
+         </div>
+      </section>
+
+      <section class="product">
+         <div class="product__container container">
+            <div class="product__inner">
+               <div class="product__titles d-flex between align-center">
+                  <h2 class="product__title">Featured Products</h2>
+                  <a class="product__btn" href="#">
+                     Shop All
+                     <i class='bx bx-chevrons-right'></i>
+                  </a>
+               </div>
+               <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                     <ul class="product__list row between">
+                        <li class="product__item product__item--active col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver relative-p">
+                              <div class="sale">
+                                 <span class="sale__txt">ONLINE ONLY</span>
+                                 <span class="sale__txt2">ON SALE!</span>
+                              </div>
+                              <img class="product__item-img__ab" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/24-home_default/hummingbird-printed-t-shirt.jpg" alt="carrot">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/30-home_default/brown-bear-printed-sweater.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                        <li class="product__item col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/31-home_default/the-best-is-yet-to-come-framed-poster.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                        <li class="product__item col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/32-home_default/the-adventure-begins-framed-poster.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                        <li class="product__item col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/33-home_default/today-is-a-good-day-framed-poster.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                     </ul>
+                    </div>
+                    <div class="carousel-item">
+                     <ul class="product__list row between">
+                        <li class="product__item product__item--active col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver relative-p">
+                              <div class="sale">
+                                 <span class="sale__txt">ONLINE ONLY</span>
+                                 <span class="sale__txt2">ON SALE!</span>
+                              </div>
+                              <img class="product__item-img__ab" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/25-home_default/hummingbird-printed-t-shirt.jpg" alt="carrot">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/34-home_default/mug-the-best-is-yet-to-come.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                        <li class="product__item col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/35-home_default/the-best-is-yet-to-come-framed-poster.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                        <li class="product__item col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/36-home_default/the-adventure-begins-framed-poster.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                        <li class="product__item col-xl-3 col-md-4 col-sm-6 col-xs-12">
+                           <div class="product__item-diver">
+                              <img class="product__item-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/37-home_default/today-is-a-good-day-framed-poster.jpg" alt="banana">
+                              <div class="product__item-view">
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-eye"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-heart"></i>
+                                 </a>
+                                 <a class="product__item-view__link" href="#">
+                                    <i class="fal fa-random"></i>
+                                 </a>
+                              </div>
+                              <a class="product__item-txt" href="#">Tomatoes</a>
+                              <a class="product__item-link" href="#">Grassfed Organic Turmeric Superghee</a>
+                              <span class="product__item-price">$15.00</span>
+                              <a class="product__item-btn" href="#">
+                                 ADD TO CART
+                                 <i class='bx bx-chevrons-right'></i>
+                              </a>
+                           </div>
+                        </li>
+                     </ul>
+                    </div>
+                    
+                  </div>
+                  <button class="carousel-control-prev product__arrow product__arrow-fr" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                     <i class="bi bi-arrow-left"></i>
+                  </button>
+                  <button class="carousel-control-next product__arrow product__arrow-sc" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                     <i class="bi bi-arrow-right"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="article">
+         <div class="article__container container">
+            <div class="article__inner row between">
+               <div class="article__imgs col-md-6 col-sx-12 col-xs-12">
+                  <img class="article__img" src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn6.jpg?v=1630131658" alt="woman">
+               </div>
+               <div class="article__titles col-md-5 col-sx-12 col-xs-12">
+                  <h2 class="article__title">A shop for good people by good people</h2>
+                  <p class="article__desc">Buy natural, sustainable and chemicalfree products from local sellers across the country.</p>
+                  <p class="article__desc">We are a strong community of 100,000+ customers and 600+ sellers who aspire to be good, do good, and spread goodness. We are a democratic, self-sustaining, two-sided marketplace which thrives on trust and is built on community and quality content.</p>
+                  <a class="article__btn" href="#">
+                     Store Location
+                     <i class='bx bxs-chevrons-right'></i>
+                  </a>
+               </div>
+            </div>
+            <div class="article__wrapper row between align-center">
+               <div class="article__imgs col-md-6 col-sx-12 col-xs-12">
+                  <img class="article__img" src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_bn7.jpg?v=1630131658" alt="potato">
+               </div>
+               <div class="article__titles article__titles-sc col-md-5 col-sx-12 col-xs-12">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                     <div class="carousel-indicators article__dots">
+                        <button class="active article__dot" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                        <button class="article__dot" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button class="article__dot" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                     </div>
+                     <div class="carousel-inner">
+                       <div class="carousel-item active">
+                          <div class="article__item-titles w-100">
+                           <h2 class="article__title article__title--b">Why customer love us</h2>
+                           <p class="article__desc article__item-desc">"I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.”</p>
+                           <span class="article__txt article__item-txt">Pragya - Bellandur Store</span>
+                          </div>
+                       </div>
+                       <div class="carousel-item">
+                          <div class="article__item-titles w-100">
+                             <h2 class="article__title article__title--b">Why customer love us</h2>
+                             <p class="article__desc article__item-desc">"I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.”</p>
+                             <span class="article__txt article__item-txt">Pragya - Bellandur Store</span>
+                          </div>
+                       </div>
+                       <div class="carousel-item"> 
+                          <div class="article__item-titles w-100">
+                             <h2 class="article__title article__title--b">Why customer love us</h2>
+                             <p class="article__desc article__item-desc">"I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.”</p>
+                             <span class="article__txt article__item-txt">Pragya - Bellandur Store</span>
+                          </div>
+                       </div>
+                     </div>
+                   </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="partner">
+         <div class="partner__container container">
+            <div class="partner__inner">
+               <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                     <div class="partner__list d-flex between autoplay">
+                        <div class="partner__item d-lg-none d-xl-block data-bs-slide">
+                           <a class="partner__link" href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/1-manu_default.jpg" alt="partner">
+                           </a>
+                        </div>
+                        <div class="partner__item">
+                           <a class="partner__link" href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/2-manu_default.jpg" alt="partner">
+                           </a>
+                        </div>
+                        <div class="partner__item d-lg-none d-xl-block">
+                           <a class="partner__link" href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/3-manu_default.jpg" alt="partner">
+                           </a>
+                        </div>
+                        <div class="partner__item">
+                           <a class="partner__link" href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/4-manu_default.jpg" alt="partner">
+                           </a>
+                        </div>
+                        <div class="partner__item">
+                           <a class="partner__link" href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/5-manu_default.jpg" alt="partner">
+                           </a>
+                        </div>
+                        <div class="partner__item">
+                           <a class="partner__link" href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/6-manu_default.jpg" alt="partner">
+                           </a>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="carousel-item">
+                     <div class="partner__list d-flex between autoplay">
+                        <div class="partner__item">
+                           <a class="partner__link" href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/3-manu_default.jpg" alt="partner">
+                           </a>
+                        </div>
+                        <div class="partner__item d-lg-none d-xl-block">
+                           <a class="partner__link" href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/2-manu_default.jpg" alt="partner">
+                           </a>
+                        </div>
+                        <div class="partner__item">
+                           <a class="partner__link" href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/1-manu_default.jpg" alt="partner">
+                           </a>
+                        </div>
+                        <div class="partner__item d-lg-none d-xl-block">
+                           <a class="partner__link" href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/4-manu_default.jpg" alt="partner">
+                           </a>
+                        </div>
+                        <div class="partner__item">
+                           <a class="partner__link" href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/6-manu_default.jpg" alt="partner">
+                           </a>
+                        </div>
+                        <div class="partner__item">
+                           <a class="partner__link" href="#">
+                              <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/m/5-manu_default.jpg" alt="partner">
+                           </a>
+                        </div>
+                     </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev" style="width: 50px; height: 50px;">
+                    
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+                    
+                  </button>
+                </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="contact">
+         <div class="contact__container container">
+            <div class="contact__inner row between">
+               <div class="col-xl-6 col-md-12 col-xs-12">
+                  <div class="d-flex contact__support">
+                     <div class="contact__imgs">
+                        <i class="fal fa-headphones-alt"></i>
+                     </div>
+                     <div class="contact__titles">
+                        <span class="contact__txt">Phone Support</span>
+                        <span class="contact__call">CALL US 24/7</span>
+                        <a class="contact__num" href="tel:+998">(1800)-88-66-991</a>
+                        <a class="contact__email" href="email:a@a.a">contact@example.com</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-xl-6 col-md-12 col-xs-12">
+                  <div class="d-flex contact__support">
+                     <div class="contact__imgs">
+                        <i class="fal fa-envelope-open-text"></i>
+                     </div>
+                     <div class="contact__titles">
+                        <span class="contact__txt">Daily Updates</span>
+                        <span class="contact__call">SUBSCRIBE US</span>
+                        <p class="contact__desc">Sign up and get a voucher of $250.00</p>
+                        <form class="contact__form" action="/action.php">
+                           <label>
+                              <input class="contact__form-inp" type="email" name="email" placeholder="Email address...">
+                           </label>
+                           <button class="contact__form-btn">
+                              <i class="bi bi-arrow-right"></i>
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer class="footer">
+         <div class="footer__container container">
+            <div class="footer__inner">
+               <ul class="footer__list d-flex between">
+                  <li class="footer__item">
+                     <span class="footer__item-txt">STORE LOCATION</span>
+                     <address class="footer__item-address">9066 Green Lake Drive Chevy
+                        Chase, MD 20815</address>
+                        <time class="footer__item-time" datetime="2020-02-20">
+                           <span class="footer__item-time__txt">Monday - Saturday:</span>
+                           8:00 am - 4:00pm
+                        </time>
+                        <time class="footer__item-time" datetime="2020-02-20">
+                           <span class="footer__item-time__txt">Saturday:</span>
+                           9:00 am - 5:00pm
+                        </time>
+                  </li>
+                  <li class="footer__item">
+                     <span class="footer__item-txt">INFORMATION</span>
+                     <a class="footer__item-link" href="about.html">About</a>
+                     <a class="footer__item-link" href="#">Blog</a>
+                     <a class="footer__item-link" href="#">Check Out</a>
+                     <a class="footer__item-link" href="contact.html">Contact</a>
+                     <a class="footer__item-link" href="#">Service</a>
+                  </li>
+                  <li class="footer__item">
+                     <span class="footer__item-txt">MY ACCOUNT</span>
+                     <a class="footer__item-link" href="contact.html">Contact</a>
+                     <a class="footer__item-link" href="#">My Account</a>
+                     <a class="footer__item-link" href="#">Blog</a>
+                     <a class="footer__item-link" href="#">Check Out</a>
+                  </li>
+                  <li class="footer__item">
+                     <span class="footer__item-txt">CATEGORIES</span>
+                     <a class="footer__item-link" href="#">Fruits & Vegetables</a>
+                     <a class="footer__item-link" href="#">Dairy Products</a>
+                     <a class="footer__item-link" href="#">Package Foods</a>
+                     <a class="footer__item-link" href="contact.html">Contact</a>
+                     <a class="footer__item-link" href="#">Service</a>
+                  </li>
+                  <li class="footer__item">
+                     <img class="footer__item-img mb-4" src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_payment.png?v=1630143530" alt="visas">
+                     <span class="footer__item-txt">FOLLOW US</span>
+                  </li>
+               </ul>
+               <p class="footer__desc">Copyright © 2021 <span>Freshio</span>. All Rights Reserved.</p>
+            </div>
+         </div>
+      </footer>
+
+   </div>
+
+   <div class="space">
+      <!-- Use to make space on body -->
+   </div>
+
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+   <!-- JQuery -->
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+   <!-- Slick JS -->
+
+   <script type="text/javascript" src="slick/slick.min.js"></script>
+
+   <!-- Main JS -->
+
+   <script src="js/main.js"></script>
+
+</body>
+</html>

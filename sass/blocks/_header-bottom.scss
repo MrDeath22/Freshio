@@ -1,0 +1,85 @@
+.header-bottom {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   display: flex;
+   background: $cl-white;
+   z-index: 10;
+
+   &__link {
+      position: relative;
+      width: 30%;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 10px 0;
+      color: $cl-txt;
+      transition: color 0.2s ease;
+
+      &:hover {
+         color: $cl-btn;
+      }
+
+      &:not(:last-child) {
+         border-right: 1px solid $cl-border;
+      }
+
+      .far {
+         display: block;
+         font-size: 20px;
+         margin-bottom: 4px;
+      }
+
+      .fa-heart {
+         position: relative;
+
+         // &:after {
+         //    position: absolute;
+         //    top: -1px;
+         //    right: 100px;
+         //    width: 17px;
+         //    height: 17px;
+         //    content: "0";
+         //    font-style: normal;
+         //    font-size: 15px;
+         //    padding-top: 0.5px;
+         //    padding-left: 0.8px;
+         //    border-radius: 50%;
+         //    color: $cl-white;
+         //    background: #E0BF96;
+         // }
+      }
+   }
+
+   .header-bottom__offcanvas {
+      height: 80px;
+   }
+
+   &__form {
+      position: relative;
+
+      .bx {
+         @include center-absolute;
+         top: 50%;
+         left: 30px;
+      }
+   }
+
+   &__inp {
+      @include center-absolute;
+      top: 50%;
+      left: 40%;
+      width: 65%;
+   }
+
+   &__btn {
+      @include center-absolute;
+      top: 50%;
+      right: 0;
+   }
+}
+
+@include breakpoint-down($max-xs) {
+   .header-bottom__inp {
+      left: 48%;
+   }   
+}

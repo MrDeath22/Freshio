@@ -1,0 +1,112 @@
+.contact {
+   padding-top: 50px;
+
+   &__support {
+      padding: 40px 0;
+      margin-bottom: 2em;
+      border-radius: 5px;
+      border: 1px solid #E5E5E5;
+   }
+
+   &__imgs {
+
+      .fal {
+         position: relative;
+         top: 30px;
+         font-size: 64px;
+         padding: 0 70px;
+         color: $cl-btn;
+      }
+   }
+
+   &__titles {
+      padding-left: 30px;
+      border-left: 1px solid #E5E5E5;
+   }
+
+   &__titles > * {
+      display: block;
+   }
+
+   &__txt {
+      font-size: 13px;
+      margin-bottom: 8px;
+      color: #aaa;
+   }
+
+   &__call {
+      font-weight: 700;
+      font-size: 12px;
+      margin-bottom: 6px;
+   }
+
+   &__num {
+      font-size: 30px;
+      margin-bottom: 6px;
+      color: $cl-btn;
+
+      &:hover {
+         color: $cl-btn;
+      }
+   }
+
+   &__email {
+      font-size: $txt-14;
+      color: $cl-txt;
+   }
+
+   &__desc {
+      font-size: $txt-14;
+      margin-top: 12px;
+      margin-bottom: 8px;
+   }
+
+   &__form {
+      position: relative;
+      height: 40px;
+      border-radius: 40px;
+      @include border;
+
+      &-inp {
+         @include center-absolute;
+         top: 50%;
+         left: 45%;
+         width: 88%;
+         font-size: $txt-14;
+         padding: 10px;
+         padding-right: 75px;
+         border-radius: 40px;
+         border: none;
+      }
+
+      &-btn {
+         .bi {
+            @include center-absolute;
+            top: 50%;
+            right: 1%;
+         }
+      }
+   }
+}
+
+@include breakpoint-down($max-sm) {
+   .contact__support {
+      display: block !important;
+      justify-content: center;
+      text-align: center;
+      
+   }
+   .contact__titles {
+      padding: 0 20px;
+      border: none;
+   }
+   .contact__imgs {
+      .fal {
+         top: 0;
+         margin-bottom: 20px;
+      }
+   }
+   .contact__desc {
+      margin-bottom: 1em;
+   }
+}

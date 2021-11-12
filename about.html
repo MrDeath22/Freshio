@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Freshio</title>
+
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+   <!-- Bootstrap Icon -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+   <!-- Box Icon -->
+   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+   <!-- Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+   <!-- Slick -->
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+   <!-- CSS Files -->
+   <link rel="stylesheet" href="./css/global.css">
+   <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body id="body">
+   
+   <section class="header-up">
+      <div class="header-up__container container">
+         <div class="header-up__inner d-flex between align-center">
+            <p class="header-up__desc">FREE express international delivery + EASY returns</p>
+            <div class="header-up__links">
+               <a class="header-up__link" href="about.html">ABOUT</a>
+               <a class="header-up__link" href="#">FAQ</a>
+               <a class="header-up__link" href="contact.html">CONTACT US</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <header class="header">
+      <div class="header__container container">
+         <div class="header__inner d-flex between align-center">
+            <button class="header__menu d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+               <i class="bi bi-list"></i>
+            </button>
+            <div class="offcanvas offcanvas-start header__menu-body" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+               <div class="offcanvas-header header__menu-inner d-flex">
+                 <button class="text-reset header__menu-close d-flex align-center" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="bi bi-x"></i>Close
+                 </button>
+               </div>
+               <div class="offcanvas-body">
+                  <ul class="header__menu-list">
+                     <li class="header__menu-item">
+                        <a class="header__menu-item__link header__menu-item__link-b  header__menu-item__link--after" href="#">
+                           Home
+                           <i class='bx bx-chevrons-right'></i>
+                        </a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-item__link header__menu-item__link--after" href="#">
+                           Shop
+                           <i class='bx bx-chevrons-right'></i>
+                        </a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-item__link header__menu-item__link--after" href="#">
+                           Pages
+                           <i class='bx bx-chevrons-right'></i>
+                        </a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-item__link" href="#">Blog</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-item__link" href="#">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <a class="header__logo" href="index.html">
+               <img class="header__logo-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/img/freshio-logo-1603358296.jpg" alt="logo">
+            </a>
+            <form class="header__form d-flex between align-center" action="example.php">
+               <label>
+                  <i class='bx bx-search-alt-2'></i>
+                  <input class="header__form-inp" type="text" placeholder="Enter Keyword...">
+               </label>
+               <button class="header__form-btn">Search</button>
+            </form>
+            <ul class="header__list d-flex">
+               <li class="header__item">
+                  <button class="header__item-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                     <i class="bi bi-person"></i>
+                  </button>
+                  <div class="offcanvas offcanvas-end header__canvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                     <div class="offcanvas-header">
+                        <a class="header__logo" href="index.html">
+                           <img class="header__logo-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/img/freshio-logo-1603358296.jpg" alt="logo">
+                        </a>
+                       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                     </div>
+                     <div class="offcanvas-body">
+                        <div class="header__canvas-inner">
+                           <span class="header__canvas-title">
+                              Existing Account Login
+                           </span>
+                           <form class="header__canvas-form" action="/action-page.php">
+                              <label>
+                                 <input class="header__canvas-form__inp" type="email" name="email" placeholder="Email Address">
+                              </label>
+                              <label class="relative-p">
+                                 <input class="header__canvas-form__inp" type="password" name="password" placeholder="Password">
+                                 <i class="fal fa-key"></i>
+                              </label>
+                              <input class="header__canvas-form__check" type="checkbox" name="check">
+                              <span class="header__canvas-form__txt">Remember Me</span>
+                              <button class="header__canvas-form__link" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Forgot Password?</button>
+                              <button class="header__canvas-form__btn">Login</button>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse">
+                                 <span class="collapse__title">Reset Password</span>
+                                 <label>
+                                    <input class="header__canvas-form__inp" type="email" name="email" placeholder="Email Address">
+                                 </label>
+                                 <button class="header__canvas-form__btn">Reset Password</button>
+                             </div>
+                           </form>
+                           <div class="header__canvas-social">
+                              <span class="header__canvas-title" style="margin-bottom: 8px">
+                                 Connect with Social Networks
+                              </span>
+                              <div class="header__canvas-social__links">
+                                 <a class="header__canvas-social__link" href="#">
+                                    <i class='bx bxl-facebook'></i>
+                                 </a>
+                                 <a class="header__canvas-social__link" href="#">
+                                    <i class='bx bxl-google'></i>
+                                 </a>
+                                 <a class="header__canvas-social__link" href="#">
+                                    <i class='bx bxl-twitter'></i>
+                                 </a>
+                              </div>
+                           </div>
+                           <form class="header__canvas-account" action="/action-page.php">
+                              <span class="header__canvas-title">
+                                 New Account Register
+                              </span>
+                              <label>
+                                 <input class="header__canvas-form__inp" type="text" name="email" placeholder="First Name">
+                              </label>
+                              <label>
+                                 <input class="header__canvas-form__inp" type="text" name="email" placeholder="Last Name">
+                              </label>
+                              <label>
+                                 <input class="header__canvas-form__inp" type="email" name="email" placeholder="Email Address">
+                              </label>
+                              <label class="relative-p">
+                                 <input class="header__canvas-form__inp" type="password" name="password" placeholder="Password">
+                                 <i class="fal fa-key"></i>
+                              </label>
+                              <input class="header__canvas-form__check" type="checkbox" name="check">
+                              <span class="header__canvas-form__txt">I agree to the terms.</span>
+                              <button class="header__canvas-form__btn">Create Account</button>
+                           </form>
+                           <div class="header__canvas-lang d-flex between">
+                              <div>
+                                 <span class="header__canvas-lang__txt">Language:</span>
+                                 <div class="header__canvas-lang__imgs">
+                                    <a href="#">
+                                       <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                                    </a>
+                                    <a href="#">
+                                       <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                                    </a>
+                                    <a href="#">
+                                       <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                       <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                                    </a>
+                                    <a href="#">
+                                       <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                                    </a>
+                                    <a href="#">
+                                       <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                                    </a>
+                                 </div>
+                                 <span class="header__canvas-lang__txt">Currency:</span> <br>
+                                 <a class="header__canvas-lang__us" href="#">EUR</a>
+                                 <a class="header__canvas-lang__us" href="#">USD</a>
+                              </div>
+                              <div class="header__canvas-lang__inner">
+                                 <a class="header__canvas-lang__link" href="#">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                    Sign In
+                                 </a>
+                                 <a class="header__canvas-lang__link" href="#">
+                                    <i class="far fa-user"></i>
+                                    My Account
+                                 </a>
+                                 <a class="header__canvas-lang__link" href="#">
+                                    <i class="far fa-heart"></i>
+                                    Oversize
+                                 </a>
+                                 <a class="header__canvas-lang__link" href="#">
+                                    <i class="fal fa-copy"></i>
+                                    Shopping (0)
+                                 </a>
+                                 <a class="header__canvas-lang__link" href="#">
+                                    <i class="fal fa-check-square"></i>
+                                    Favoutite
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="header__item">
+                  <a class="header__item-link" href="#">
+                     <i class="bi bi-heart"></i>
+                  </a>
+               </li>
+               <li class="header__item">
+                  <a class="header__item-link" href="#">
+                     <i class="bi bi-basket"></i>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <button class="header__left-txt">
+         THEME OPTIONS
+      </button>
+   
+   </header>
+
+   <!-- Navigation -->
+   <div class="container" id="container">
+      <div class="header-nav d-flex align-center">
+         <button class="header-nav__menu d-flex align-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-list"></i>
+            Shop by Department
+         </button>
+         <ul class="dropdown-menu header-nav__menu-list" aria-labelledby="dropdownMenuButton1">
+            <li class="header-nav__menu-item">
+               <a class="dropdown-item header-nav__menu-item__link" href="#">
+                  <i class="fal fa-salad"></i>
+                  Fruits & Vegetables
+               </a>
+            </li>
+            <li class="header-nav__menu-item">
+               <a class="dropdown-item header-nav__menu-item__link" href="#">
+                  <i class="fal fa-meat"></i>
+                  Supplyments
+               </a>
+            </li>
+            <li class="header-nav__menu-item">
+               <a class="dropdown-item header-nav__menu-item__link" href="#">
+                  <i class="fal fa-egg-fried"></i>
+                  Dairy Bread & Eggs
+               </a>
+            </li>
+            <li class="header-nav__menu-item">
+               <a class="dropdown-item header-nav__menu-item__link" href="#">
+                  <i class="fal fa-pizza-slice"></i>
+                  Package Foods
+               </a>
+            </li>
+            <li class="header-nav__menu-item">
+               <a class="dropdown-item header-nav__menu-item__link" href="#">
+                  <i class="fal fa-apple-alt"></i>
+                  Beauty & Care
+               </a>
+            </li>
+            <li class="header-nav__menu-item">
+               <a class="dropdown-item header-nav__menu-item__link" href="#">
+                  <i class="fal fa-volleyball-ball"></i>
+                  Health & Wellness
+               </a>
+            </li>
+            <li class="header-nav__menu-item">
+               <a class="dropdown-item header-nav__menu-item__link" href="#">
+                  <i class="fal fa-ice-cream"></i>
+                  Baby & Infants
+               </a>
+            </li>
+            <li class="header-nav__menu-item">
+               <a class="dropdown-item header-nav__menu-item__link" href="#">
+                  <i class="fal fa-leaf"></i>
+                  Home Care
+               </a>
+            </li>
+            <li class="header-nav__menu-item">
+               <a class="dropdown-item header-nav__menu-item__link" href="#">
+                  <i class="fal fa-badge-percent"></i>
+                  Hot Offers
+               </a>
+            </li>
+         </ul>
+         <nav class="nav">
+            <ul class="header-nav__list d-flex">
+               <li class="header-nav__item">
+                  <a class="header-nav__item-link" href="#">
+                     Home
+                     <i class='bx bx-chevron-down'></i>
+                  </a>
+                  <div class="header-nav__drop header-nav__drop1">
+                     <a class="header-nav__drop-link" href="#">Home 1</a>
+                     <a class="header-nav__drop-link" href="#">Home 2</a>
+                     <a class="header-nav__drop-link" href="#">Home 3</a>
+                     <a class="header-nav__drop-link" href="#">Home 4</a>
+                     <a class="header-nav__drop-link" href="#">Home 5</a>
+                     <a class="header-nav__drop-link" href="#">Home 6</a>
+                     <a class="header-nav__drop-link" href="#">Home 7</a>
+                     <a class="header-nav__drop-link" href="#">Home 8</a>
+                  </div>
+               </li>
+               <li class="header-nav__item">
+                  <a class="header-nav__item-link" href="#">
+                     Shop
+                     <i class='bx bx-chevron-down'></i>
+                  </a>
+                  <div class="header-nav__drop d-flex">
+                     <div class="header-nav__drop-inner">
+                        <span class="header-nav__drop-txt">Categories 1</span>
+                        <a class="header-nav__drop-link" href="#">Home 1</a>
+                        <a class="header-nav__drop-link" href="#">Home 2</a>
+                        <a class="header-nav__drop-link" href="#">Home 3</a>
+                        <a class="header-nav__drop-link" href="#">Home 4</a>
+                     </div>
+                     <div class="header-nav__drop-inner">
+                        <span class="header-nav__drop-txt">Categories 2</span>
+                        <a class="header-nav__drop-link" href="#">Home 1</a>
+                        <a class="header-nav__drop-link" href="#">Home 2</a>
+                        <a class="header-nav__drop-link" href="#">Home 3</a>
+                        <a class="header-nav__drop-link" href="#">Home 4</a>
+                     </div>
+                     <div class="header-nav__drop-inner">
+                        <span class="header-nav__drop-txt">Categories 3</span>
+                        <a class="header-nav__drop-link" href="#">Home 1</a>
+                        <a class="header-nav__drop-link" href="#">Home 2</a>
+                        <a class="header-nav__drop-link" href="#">Home 3</a>
+                        <a class="header-nav__drop-link" href="#">Home 4</a>
+                     </div>
+                     <div class="header-nav__drop-inner">
+                        <span class="header-nav__drop-txt">Categories 4</span>
+                        <a class="header-nav__drop-link" href="#">Home 1</a>
+                        <a class="header-nav__drop-link" href="#">Home 2</a>
+                        <a class="header-nav__drop-link" href="#">Home 3</a>
+                        <a class="header-nav__drop-link" href="#">Home 4</a>
+                     </div>
+                  </div>
+               </li>
+               <li class="header-nav__item">
+                  <a class="header-nav__item-link" href="#">
+                     Pages
+                     <i class='bx bx-chevron-down'></i>
+                  </a>
+                  <div class="header-nav__drop header-nav__drop2 d-flex">
+                     <div class="header-nav__drop-item">
+                        <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg" alt="img">
+                     </div>
+                     <div class="header-nav__drop-item">
+                        <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg" alt="img">
+                     </div>
+                     <div class="header-nav__drop-item">
+                        <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg" alt="img">
+                     </div>
+                     <div class="header-nav__drop-item">
+                        <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/8c/16/f9/8c16f9f024af16977adc1f618872eb8b.jpg" alt="img">
+                     </div>
+                     <div class="header-nav__drop-item">
+                        <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/38/99/1a/38991a8c1582669d29abe889bc0d5f52.jpg" alt="img">
+                     </div>
+                     <div class="header-nav__drop-item">
+                        <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/c5/d9/02/c5d9025b68250832a31eac3b6d344955.jpg" alt="img">
+                     </div>
+                     <div class="header-nav__drop-item">
+                        <img class="header-nav__drop-img" src="https://i.pinimg.com/originals/c5/d9/02/c5d9025b68250832a31eac3b6d344955.jpg" alt="img">
+                     </div>
+                  </div>
+               </li>
+               <li class="header-nav__item">
+                  <a class="header-nav__item-link" href="#">Blog</a>
+               </li>
+               <li class="header-nav__item">
+                  <a class="header-nav__item-link" href="#">Contact</a>
+               </li>
+            </ul>
+         </nav>
+      </div>   
+   </div>
+
+   <!-- * use to naviganion on responsive "sm" -->
+   <div class="header-bottom d-lg-none center">
+      <a class="header-bottom__link" href="#">
+         <i class="far fa-store"></i>
+         shop
+      </a>
+      <a class="header-bottom__link" href="#">
+         <i class="far fa-heart"></i>
+         wishlist
+      </a>
+      <button class="header-bottom__link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2">
+         <i class="far fa-user"></i>
+         account
+      </button>
+      <div class="offcanvas offcanvas-end header__canvas" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel2">
+         <div class="offcanvas-header">
+            <a class="header__logo" href="index.html">
+               <img class="header__logo-img" src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/img/freshio-logo-1603358296.jpg" alt="logo">
+            </a>
+           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+         </div>
+         <div class="offcanvas-body">
+
+            <div class="header__canvas-inner" style="padding-left: 0;">
+               <span class="header__canvas-title">
+                  Existing Account Login
+               </span>
+               <form class="header__canvas-form" action="/action-page.php">
+
+                  <label>
+                     <input class="header__canvas-form__inp" type="email" name="email" placeholder="Email Address">
+                  </label>
+                  <label class="relative-p">
+                     <input class="header__canvas-form__inp" type="password" name="password" placeholder="Password">
+                     <i class="fal fa-key"></i>
+                  </label>
+                  <input class="header__canvas-form__check" type="checkbox" name="check">
+                  <span class="header__canvas-form__txt">Remember Me</span>
+                  <button class="header__canvas-form__link" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="margin-bottom: 14px;">Forgot Password?</button>
+                  <button class="header__canvas-form__btn">Login</button>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse">
+                     <span class="collapse__title">Reset Password</span>
+                     <label>
+                        <input class="header__canvas-form__inp" type="email" name="email" placeholder="Email Address">
+                     </label>
+                     <button class="header__canvas-form__btn">Reset Password</button>
+                 </div>
+               </form>
+
+               <div class="header__canvas-social">
+                  <span class="header__canvas-title" style="margin-bottom: 8px">
+                     Connect with Social Networks
+                  </span>
+                  <div class="header__canvas-social__links">
+                     <a class="header__canvas-social__link" href="#">
+                        <i class='bx bxl-facebook'></i>
+                     </a>
+                     <a class="header__canvas-social__link" href="#">
+                        <i class='bx bxl-google'></i>
+                     </a>
+                     <a class="header__canvas-social__link" href="#">
+                        <i class='bx bxl-twitter'></i>
+                     </a>
+                  </div>
+               </div>
+
+               <form class="header__canvas-account" action="/action-page.php">
+
+                  <span class="header__canvas-title">
+                     New Account Register
+                  </span>
+                  <label>
+                     <input class="header__canvas-form__inp" type="text" name="email" placeholder="First Name">
+                  </label>
+                  <label>
+                     <input class="header__canvas-form__inp" type="text" name="email" placeholder="Last Name">
+                  </label>
+                  <label>
+                     <input class="header__canvas-form__inp" type="email" name="email" placeholder="Email Address">
+                  </label>
+                  <label class="relative-p">
+                     <input class="header__canvas-form__inp" type="password" name="password" placeholder="Password">
+                     <i class="fal fa-key"></i>
+                  </label>
+                  <input class="header__canvas-form__check" type="checkbox" name="check">
+                  <span class="header__canvas-form__txt">I agree to the terms.</span>
+                  <button class="header__canvas-form__btn">Create Account</button>
+
+               </form>
+
+               <div class="header__canvas-lang d-flex between">
+                  <div>
+                     <span class="header__canvas-lang__txt">Language:</span>
+                     <div class="header__canvas-lang__imgs">
+                        <a href="#">
+                           <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                        </a>
+                        <a href="#">
+                           <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                        </a>
+                        <a href="#">
+                           <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                        </a>
+                        <br>
+                        <a href="#">
+                           <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                        </a>
+                        <a href="#">
+                           <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                        </a>
+                        <a href="#">
+                           <img src="https://demo73.leotheme.com/prestashop/at_freshio/img/l/1.jpg" alt="en">
+                        </a>
+                     </div>
+                     <span class="header__canvas-lang__txt">Currency:</span> <br>
+                     <a class="header__canvas-lang__us" href="#">EUR</a>
+                     <a class="header__canvas-lang__us" href="#">USD</a>
+                  </div>
+
+                  <div class="header__canvas-lang__inner">
+                     <a class="header__canvas-lang__link" href="#">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Sign In
+                     </a>
+                     <a class="header__canvas-lang__link" href="#">
+                        <i class="far fa-user"></i>
+                        My Account
+                     </a>
+                     <a class="header__canvas-lang__link" href="#">
+                        <i class="far fa-heart"></i>
+                        Oversize
+                     </a>
+                     <a class="header__canvas-lang__link" href="#">
+                        <i class="fal fa-copy"></i>
+                        Shopping (0)
+                     </a>
+                     <a class="header__canvas-lang__link" href="#">
+                        <i class="fal fa-check-square"></i>
+                        Favoutite
+                     </a>
+                  </div>
+               </div>
+               
+            </div>
+
+         </div>
+      </div>
+      <button class="header-bottom__link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+         <i class="far fa-search"></i>
+         search
+      </button>
+      <div class="offcanvas offcanvas-top header-bottom__offcanvas" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+         <div class="offcanvas-body">
+            <form class="header__form header-bottom__form d-flex between align-center w-100" action="example.php" style="display: block !important;">
+               <i class='bx bx-search-alt-2'></i>
+               <label>
+                  <input class="header__form-inp header-bottom__inp" type="text" placeholder="Enter Keyword...">
+               </label>
+               <button class="header__form-btn header-bottom__btn">Search</button>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <main>
+
+      <div class="home-about relative-p">
+         <div class="container">
+            <ul class="home-about__list d-flex">
+               <li class="home-about__item">
+                  <a class="home-about__link" href="index.html">
+                     Home
+                     <i class='bx bx-chevron-right'></i>
+                  </a>
+               </li>
+               <li class="home-about__item">
+                  <a class="home-about__link" href="about.html">About us</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <section class="about">
+         <div class="about__container container">
+            <div class="about__inner">
+               <h2 class="about__title">About us</h2>
+               <h3 class="about__title-sc">About us</h3>
+               <ul class="about__list d-flex">
+                  <li class="about__item">
+                     <span class="about__item-txt">Our company</span>
+                     <span class="about__item-txt__sc">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididun.</span>
+                     <p class="about__item-desc">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet conse ctetur adipisicing elit.</p>
+                     <p class="about__item-desc">Top quality products <br>
+                        Best customer service <br>
+                        30-days money back guarantee</p>
+                  </li>
+                  <li class="about__item">
+                     <span class="about__item-txt">Our team</span>
+                     <span class="about__item-txt__sc">Lorem set sint occaecat cupidatat non.</span>
+                     <p class="about__item-desc">Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                  </li>
+                  <li class="about__item">
+                     <span class="about__item-txt">Testimonials</span>
+                     <p class="about__item-desc">“Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.” <span class="about__item-txt__sc">Lorem ipsum dolor sit</span></p>
+                     <p class="about__item-desc">“Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod.”<span class="about__item-txt__sc"> Ipsum dolor sit</span></p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <section class="contact">
+      <div class="contact__container container">
+         <div class="contact__inner row between">
+            <div class="col-xl-6 col-md-12 col-xs-12">
+               <div class="d-flex contact__support">
+                  <div class="contact__imgs">
+                     <i class="fal fa-headphones-alt"></i>
+                  </div>
+                  <div class="contact__titles">
+                     <span class="contact__txt">Phone Support</span>
+                     <span class="contact__call">CALL US 24/7</span>
+                     <a class="contact__num" href="tel:+998">(1800)-88-66-991</a>
+                     <a class="contact__email" href="email:a@a.a">contact@example.com</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-xl-6 col-md-12 col-xs-12">
+               <div class="d-flex contact__support">
+                  <div class="contact__imgs">
+                     <i class="fal fa-envelope-open-text"></i>
+                  </div>
+                  <div class="contact__titles">
+                     <span class="contact__txt">Daily Updates</span>
+                     <span class="contact__call">SUBSCRIBE US</span>
+                     <p class="contact__desc">Sign up and get a voucher of $250.00</p>
+                     <form class="contact__form" action="/action.php">
+                        <label>
+                           <input class="contact__form-inp" type="email" name="email" placeholder="Email address...">
+                        </label>
+                        <button class="contact__form-btn">
+                           <i class="bi bi-arrow-right"></i>
+                        </button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="footer__container container">
+         <div class="footer__inner">
+            <ul class="footer__list d-flex between">
+               <li class="footer__item">
+                  <span class="footer__item-txt">STORE LOCATION</span>
+                  <address class="footer__item-address">9066 Green Lake Drive Chevy
+                     Chase, MD 20815</address>
+                     <time class="footer__item-time" datetime="2020-02-20">
+                        <span class="footer__item-time__txt">Monday - Saturday:</span>
+                        8:00 am - 4:00pm
+                     </time>
+                     <time class="footer__item-time" datetime="2020-02-20">
+                        <span class="footer__item-time__txt">Saturday:</span>
+                        9:00 am - 5:00pm
+                     </time>
+               </li>
+               <li class="footer__item">
+                  <span class="footer__item-txt">INFORMATION</span>
+                  <a class="footer__item-link" href="#">About</a>
+                  <a class="footer__item-link" href="#">Blog</a>
+                  <a class="footer__item-link" href="#">Check Out</a>
+                  <a class="footer__item-link" href="#">Contact</a>
+                  <a class="footer__item-link" href="#">Service</a>
+               </li>
+               <li class="footer__item">
+                  <span class="footer__item-txt">MY ACCOUNT</span>
+                  <a class="footer__item-link" href="#">Contact</a>
+                  <a class="footer__item-link" href="#">My Account</a>
+                  <a class="footer__item-link" href="#">Blog</a>
+                  <a class="footer__item-link" href="#">Check Out</a>
+               </li>
+               <li class="footer__item">
+                  <span class="footer__item-txt">CATEGORIES</span>
+                  <a class="footer__item-link" href="#">Fruits & Vegetables</a>
+                  <a class="footer__item-link" href="#">Dairy Products</a>
+                  <a class="footer__item-link" href="#">Package Foods</a>
+                  <a class="footer__item-link" href="#">Contact</a>
+                  <a class="footer__item-link" href="#">Service</a>
+               </li>
+               <li class="footer__item">
+                  <img class="footer__item-img mb-4" src="https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_h2_payment.png?v=1630143530" alt="visas">
+                  <span class="footer__item-txt">FOLLOW US</span>
+               </li>
+            </ul>
+            <p class="footer__desc">Copyright © 2021 <span>Freshio</span>. All Rights Reserved.</p>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+   <!-- JQuery -->
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+   <!-- Slick JS -->
+
+   <script type="text/javascript" src="slick/slick.min.js"></script>
+
+   <!-- Main JS -->
+
+   <script src="js/main.js"></script>
+
+</body>
+</html>

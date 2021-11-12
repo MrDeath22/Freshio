@@ -1,0 +1,200 @@
+.article {
+   padding: 50px 0;
+
+   &__inner {
+      margin-bottom: 40px;
+   }
+
+   &__imgs {
+      padding: 0 !important;
+   }
+
+   &__img {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+
+   &__title {
+      max-width: 400px;
+      font-weight: 400;
+      font-size: 30px;
+      margin-bottom: 18px;
+
+      &--b {
+         margin-left: 70px;
+
+         &::before {
+            position: relative;
+            top: 20px;
+            right: 70px;
+            width: 48px;
+            height: 48px;
+            content: "";
+            background-image: url('https://demo73.leotheme.com/prestashop/at_freshio/themes/freshio/assets/img/modules/appagebuilder/images/freshio_h2_image_kep.png');
+            z-index: 5;
+         }
+      }
+   }
+
+   &__desc {
+      max-width: 470px;
+      font-size: $txt-14;
+      margin-bottom: 1em;
+   }
+
+   &__btn {
+      position: relative;
+      font-weight: 700;
+      font-size: 12px;
+      margin-top: 1em;
+      color: $cl-btn;
+
+      &:hover {
+         color: $cl-btn;
+      }
+
+      &:hover .bx {
+         transform: translateX(3px);
+      }
+
+      &::after {
+         position: absolute;
+         bottom: -5px;
+         left: 0;
+         width: 95%;
+         height: 1px;
+         content: "";
+         background: $cl-btn;
+      }
+
+      .bx {
+         position: relative;
+         top: 2px;
+         @include tr-trans;
+      }
+   }
+
+   &__titles {
+      padding: 0 !important;
+   }
+
+   &__wrapper {
+      flex-direction: row-reverse;
+   }
+
+   &__item {
+
+      &-titles {
+         margin-bottom: 50px;
+      }
+      
+      &-desc {
+         margin-left: 120px;
+      }
+
+      &-txt {
+         margin-left: 120px;
+      }
+   }
+
+   &__dots {
+      position: absolute;
+      left: -40%;
+      bottom: -10%;
+   }
+
+   &__dot {
+      width: 0px !important;
+      height: 0px !important;
+      padding: 4px !important;
+      margin-right: 10px !important;
+      border-radius: 50%;
+      border: none !important;
+      background: $cl-black !important;
+      box-sizing: border-box !important;
+   }
+}
+
+@include breakpoint-down(1260px) {
+   .article__dots {
+      left: -32%;
+   }
+}
+
+@include breakpoint-down($max-lg) {
+   .article__inner,
+   .article__wrapper {
+      justify-content: space-around !important;
+   }
+   .article__title {
+      margin-left: 0;
+
+      &--b {
+         width: 100%;
+         display: flex;
+      }
+
+      &::before {
+         position: relative;
+         top: 0;
+         left: 0;
+         padding-right: 50px;
+         margin-right: 20px;
+      }
+   }
+   .article__desc,
+   .article__txt {
+      margin-left: 0;
+   }
+   .article__dots {
+      left: -85%;
+   }
+}
+
+@include breakpoint-down($max-sm) {
+   .article__title--b {
+      max-width: 600px;
+
+      &::before {
+         margin-right: 50px;
+      }
+   }
+   .article__item-desc,
+   .article__item-txt {
+      max-width: 600px;
+      margin-left: 100px;
+   }
+   .article__dots {
+      left: -60%;
+   }
+}
+
+@include breakpoint-down(670px) {
+   .article__dots {
+      left: -56%;
+   }
+}
+
+@include breakpoint-down(570px) {
+   .article__dots {
+      left: -48%;
+   }
+}
+
+@include breakpoint-down(480px) {
+   .article__title--b {
+      max-width: 600px;
+
+      &::before {
+         margin-right: 10px;
+      }
+   }
+   .article__item-desc,
+   .article__item-txt {
+      max-width: 600px;
+      margin-left: 0;
+   }
+   .article__dokts {
+      left: -80%;
+   }
+}

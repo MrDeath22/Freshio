@@ -1,0 +1,109 @@
+#body {
+   padding-left: 0;
+   padding-right: 0;
+   background: $cl-white;
+
+   .container {
+      max-width: 1450px;
+   }
+
+   #container {
+      max-width: 100%;
+      padding: 0;
+   }
+
+   .header__left-txt {
+      top: 42% !important;
+   }
+}
+
+.home-about {
+   background-repeat: no-repeat;
+   background-position: left -150px center;
+   background-image: url('https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_bg-breadcrumb.jpg?v=1605078920');
+   background-color: #F4F9E8;
+   min-height: 300px;
+   position: relative;
+   width: 100vw;
+   left: 50%;
+   transform: translateX(-50%);
+
+   &__list {
+      @include center-absolute;
+      top: 50%;
+      left: 200px;
+      @include list-unstyled;
+      align-items: center;
+   }
+
+   &__link {
+      font-weight: 500;
+      font-size: 15px;
+      color: #6e6e6e;
+      @include tr-bg_cl;
+
+      &:hover {
+         color: $cl-btn;
+      }
+
+      .bx {
+         position: relative;
+         top: 2px;
+         font-size: 18px;
+      }
+   }
+}
+
+.about {
+   padding-top: 50px;
+
+   &__title {
+      font-weight: 400;
+      font-size: 28px;
+      margin-bottom: 1em;
+
+      &-sc {
+         font-weight: 400;
+         font-size: 28px;
+         margin-left: 30px;
+         margin-bottom: 8px;
+      }
+   }
+
+   &__item {
+      &:not(:last-child) {
+         margin-right: 30px;
+      }
+
+      &-txt {
+         display: block;
+         font-size: 18px;
+         margin-bottom: 6px;
+
+         &__sc {
+            font-weight: 700;
+            font-size: $txt-14;
+            margin-bottom: 12px;
+            color: #aaa;
+         }
+      }
+
+      &-desc {
+         font-size: $txt-14;
+         color: #aaa;
+      }
+   }
+}
+
+@include breakpoint-down($max-xs) {
+   .about__title-sc {
+      margin-left: 0; 
+   }
+   .about__list {
+      display: block !important;
+      padding: 0;
+   }
+   .about__item {
+      margin-bottom: 1em;
+   }
+}

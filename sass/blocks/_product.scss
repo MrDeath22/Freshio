@@ -1,0 +1,289 @@
+.product {
+   padding: 50px 0;
+
+   &__titles {
+      margin-bottom: 2em;
+   }
+
+   &__title {
+      font-weight: 400;
+      font-size: 30px;
+
+      &::before {
+         position: relative;
+         bottom: -1px;
+         width: 16px;
+         height: 16px;
+         content: "";
+         margin-right: 12px;
+         border-radius: 50%;
+         border: 2px solid $cl-btn;
+         background: $cl-white;
+      }
+
+      &2::before {
+         border-color: #EC3069;
+      }
+   }
+
+   &__btn {
+      position: relative;
+      top: 3px;
+      font-weight: 700;
+      font-size: 12px;
+      color: $cl-btn;
+
+      .bx {
+         position: relative;
+         top: 2px;
+         font-size: $txt-14;
+         @include tr-trans;
+      }
+   
+      &::after {
+         position: relative;
+         bottom: 11px;
+         width: 90%;
+         height: 1px;
+         content: "";
+         background: $cl-btn;
+      }
+
+      &:hover {
+         color: $cl-btn;
+      }
+
+      &:hover .bx {
+         transform: translateX(3px);
+      }
+   }
+   
+   &__list {
+      position: relative;
+      @include list-unstyled;
+   }
+
+   &__arrow {
+      @include center-absolute;
+      top: 55%;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      @include border;
+      color: $cl-black;
+      background: $cl-white !important;
+      opacity: 0;
+      transition: all 0.4s ease;
+
+      &-fr {
+         left: 0;
+      }
+
+      &-sc {
+         right: -40px;
+      }
+
+      &:focus {
+         color: $cl-black;
+      }
+      
+      .bi {
+         padding: 10px 11px;
+         border-radius: 50%;
+         @include tr-bg_cl;
+         opacity: 1;
+
+         &:hover {
+            color: $cl-white;
+            background: $cl-btn;
+         }
+      }
+   }
+
+   .carousel-fade:hover &__arrow-fr {
+      left: 40px;
+      opacity: 1;
+   }
+
+   .carousel-fade:hover &__arrow-sc {
+      right: 0;
+      opacity: 1;
+   }
+
+   &__item {
+      position: relative;
+      text-align: center;
+      padding: 10px;
+
+      &--active {
+
+         .sale {
+
+            &__txt,
+            &__txt2 {
+               position: absolute;
+               top: 0px;
+               left: 0.5px;
+               font-size: 10px;
+               padding: 4px 8px;
+               padding-right: 20px;
+               border-radius: 10px 0 40px 0;
+               color: $cl-white;
+               background: #0791D6;
+               z-index: 10;
+            }
+
+            &__txt2 {
+               top: 24.5px;
+               background: $cl-btn;
+            }
+         }
+      }
+
+      &:hover &-view {
+         top: 50%;
+         opacity: 1;
+      }
+
+      &-diver {
+         padding: 20px;
+         padding-bottom: 40px;
+         border-radius: 5px;
+         border: 1px solid #EFEFEF;
+      }
+
+      &-img {
+         width: 300px;
+         height: 300px;
+         object-fit: contain;
+
+         &__ab {
+            position: absolute;
+            top: 10%;
+            left: 0;
+            transform: rotateY(90deg);
+            z-index: 2;
+            transition: transform 0.4s ease-in-out;
+         }
+      }
+
+      &:hover &-img__ab {
+         transform: rotateY(0);
+      }
+
+      &-view {
+         @include center-absolute;
+         top: 60%;
+         left: 50%;
+         transition: all 0.4s ease;
+         opacity: 0;
+         z-index: 5;
+
+         &__link {
+            color: $cl-primary;
+
+            .fal {
+               padding: 10px;
+               border-radius: 50%;
+               border: 1px solid #E8E8E8;
+               background: $cl-white;
+               @include tr-bg_cl;
+
+               &:hover {
+                  color: $cl-white;
+                  background: $cl-primary;
+               }
+            }
+         }
+      }
+
+      &-txt {
+         display: block;
+         font-weight: 500;
+         font-size: $txt-14;
+         margin-bottom: 10px;
+         color: $cl-btn;
+
+         &:hover {
+            color: $cl-btn;
+         }
+      }
+
+      &-link {
+         max-width: 250px;
+         display: block;
+         font-size: $txt-14;
+         @include tr-bg_cl;
+         margin: 0 auto;
+         margin-bottom: 12px;
+         color: $cl-black;
+
+         &:hover {
+            color: $cl-btn;
+         }
+      }
+
+      &:hover &-price::after {
+         transform: scaleX(2.5);
+      }
+
+      &-price {
+         display: block;
+         position: relative;
+         padding-bottom: 2em;
+         color: #E1C199;
+
+         &::after {
+            position: absolute;
+            bottom: 16px;
+            left: 44%;
+            width: 13%;
+            height: 1px;
+            content: "";
+            background: $cl-btn;
+            @include tr-trans;
+         }
+      }
+
+      &-btn {
+         display: inline-block;
+         font-weight: 700;
+         font-size: 12px;
+         color: $cl-black;
+         @include tr-bg_cl;
+
+         .bx {
+            position: relative;
+            top: 3px;
+            font-size: 16px;
+            @include tr-trans;
+         }
+
+         &:hover {
+            color: $cl-btn;
+         }
+
+         &:hover .bx {
+            transform: translateX(5px);
+         }
+      }
+   }
+}
+
+@include breakpoint-down($max-lg) {
+   .product__item:last-child {
+      display: none;
+   }
+}
+
+@include breakpoint-down($max-sm) {
+   .product__item:nth-child(3) {
+      display: none;
+   }
+}
+
+@include breakpoint-down($max-xs) {
+   .product__item:nth-child(2) {
+      display: none;
+   }
+}
